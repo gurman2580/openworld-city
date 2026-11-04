@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101820" />
+    <meta name="description" content="A browser-based multiplayer open-world city prototype." />
+    <title>Openworld City — Multiplayer Prototype</title>
+  </head>
+  <body>
+    <div id="game">
+      <div id="loading"><div class="loader"></div><strong>BUILDING THE CITY</strong><span>Preparing streets, buildings and players…</span></div>
+      <div id="hud">
+        <div class="brand"><span class="brand-dot"></span> OPENWORLD <b>CITY</b><small>ONLINE PROTOTYPE</small></div>
+        <div class="top-right">
+          <div class="pill" id="connection"><i></i> CONNECTING</div>
+          <div class="pill"><span id="player-count">1</span> PLAYERS</div>
+        </div>
+        <div class="mission">
+          <small>FREE ROAM</small>
+          <strong>Explore the city</strong>
+          <span>Discover the streets. Meet other players.</span>
+        </div>
+        <div class="help">
+          <span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> MOVE</span>
+          <span><kbd>SHIFT</kbd> SPRINT</span>
+          <span><kbd>SPACE</kbd> JUMP</span>
+          <span><kbd>E</kbd> ENTER / EXIT CAR</span>
+          <span><kbd>DRAG</kbd> ROTATE CAMERA</span>
+        </div>
+        <div class="toast" id="toast">Welcome to the city</div>
+      </div>
+      <div id="start-screen">
+        <div class="start-card">
+          <div class="eyebrow">MULTIPLAYER CITY // EARLY ACCESS</div>
+          <h1>YOUR CITY.<br><em>YOUR STORY.</em></h1>
+          <p>Explore a living 3D city with other players. This is the first playable prototype.</p>
+          <label for="player-name">PLAYER NAME</label>
+          <input id="player-name" maxlength="18" value="Player" autocomplete="nickname" />
+          <button id="play">ENTER THE CITY <span>↗</span></button>
+          <small>WASD to move · Drag to look · E near a car to drive</small>
+        </div>
+      </div>
+      <div id="crosshair">+</div>
+      <div class="bottom-left"><span class="mini-label">DISTRICT</span><strong>HARBOR CENTRAL</strong></div>
+      <div class="bottom-right">CITY BUILD 0.1.0 <span>•</span> WEBGL</div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

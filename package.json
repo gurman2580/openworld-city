@@ -1,0 +1,21 @@
+{
+  "name": "openworld-city-multiplayer",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "dev:worker": "wrangler dev --config wrangler.jsonc --port 8787",
+    "deploy:worker": "wrangler deploy --config wrangler.jsonc",
+    "deploy:pages": "npm run build && wrangler pages deploy dist --project-name openworld-city"
+  },
+  "dependencies": {
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.7",
+    "wrangler": "^4.40.0"
+  }
+}
